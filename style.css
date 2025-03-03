@@ -52,12 +52,14 @@ nav ul li a {
 
 table {
   width: 85%;
+  max-width: 800px; /* Set a maximum width */
+  height: 400px; /* Set a fixed height */
+  overflow: auto; /* Make the table scrollable if content overflows */
   border-collapse: separate; /* Use separate borders */
   border-spacing: 10px; /* Add spacing between cells */
   margin: 10px 0;
   font-size: 1em;
   font-family: 'Arial', sans-serif;
-  min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
