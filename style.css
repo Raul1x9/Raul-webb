@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+.body1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #15008a, #0060df); /* Gradient from top to bottom */
+  font-family: 'Jersey 10', sans-serif;
+}
+
+.body2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #15008a, #0060df);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(22, 122, 236, 0.582); /* Semi-transparent background */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5em;
+}
+
+table {
+  width: 85%;
+  border-collapse: separate; /* Use separate borders */
+  border-spacing: 10px; /* Add spacing between cells */
+  margin: 10px 0;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+  padding: 10px 15px;
+  border: 2px solid rgba(255, 0, 0, 0); /* Thicker border */
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(21, 0, 138, 0.5); /* Semi-transparent background similar to body */
+  -webkit-backdrop-filter: blur(5px); /* Apply blur effect for Safari */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  font-weight: bold; /* Make text bolder */
+}
+
+th {
+  background-color: rgba(255, 150, 150, 0.63); /* Slightly transparent background for header */
+}
+
+tr {
+  background-color: rgba(255, 155, 155, 0.555); /* Slightly transparent background for rows */
+}
+
+td:nth-child(2), td:nth-child(3) {
+  font-style: italic; /* Italic names */
+}
+
+.animate1 {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: floatIn 2s forwards;
+  text-align: center;
+  font-size: 3em; /* Adjust the size as needed */
+  margin-top: 100px; /* Add margin to avoid overlap with the header */
+}
+
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.large {
+  font-size: 3.5em
+}
+
+#admin-content {
+  display: none;
+}
+
+.h1e {
+  color: white;
+}
