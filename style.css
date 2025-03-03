@@ -50,14 +50,18 @@ nav ul li a {
   font-size: 1.5em;
 }
 
-table {
-  width: 85%;
-  max-width: 800px; /* Set a maximum width */
+.table-container {
+  width: 800px; /* Set a fixed width */
   height: 400px; /* Set a fixed height */
-  overflow: auto; /* Make the table scrollable if content overflows */
+  overflow: scroll; /* Make the container scrollable */
+  margin: 0 auto; /* Center the container */
+}
+
+table {
+  width: 100%; /* Make the table take the full width of the container */
+  height: 100%; /* Make the table take the full height of the container */
   border-collapse: separate; /* Use separate borders */
   border-spacing: 10px; /* Add spacing between cells */
-  margin: 10px 0;
   font-size: 1em;
   font-family: 'Arial', sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
